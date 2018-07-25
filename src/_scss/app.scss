@@ -51,7 +51,7 @@
         animation: ani .7s  ease-in-out ;
     }
     .container{
-       @include position-center($top:55%);
+       @include position-center($top:50%);
        width:350px;
        height:500px;
        border-radius: 12px; 

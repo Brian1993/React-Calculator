@@ -35,7 +35,7 @@
       margin-top: 10px; }
   .app .show_click_value {
     position: absolute;
-    top: 30%;
+    top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: #d63c6b;
@@ -56,6 +56,11 @@
     border-radius: 12px;
     display: flex;
     flex-direction: column; }
+    @media screen and(max-width:500px){
+      .app .container{
+        top: 60% !important;
+      }
+    }
     .app .container .result-wrap {
       flex: 1;
       display: flex;
