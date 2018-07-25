@@ -1,4 +1,4 @@
-# React Calculaotor
+# React Calculator
  DEMO : https://brian1993.github.io/React-Calculator/
  
 ## User story 
