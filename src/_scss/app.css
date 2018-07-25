@@ -1,0 +1,81 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+@keyframes ani {
+  0% {
+    opacity: 0;
+    top: 20%; }
+  100% {
+    opacity: 1;
+    top: 30%; } }
+
+.app {
+  width: 100%;
+  height: 100vh;
+  background-image: radial-gradient(50% 30% ellipse at center top, #201e40 0%, rgba(0, 0, 0, 0) 100%), radial-gradient(60% 50% ellipse at center bottom, #261226 0%, #100a1c 100%);
+  background-attachment: fixed; }
+  .app .title-container {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #6cacc5; }
+    @media screen and (max-width: 500px) {
+      .app .title-container {
+        width: 100%;
+        font-size: 16px; } }
+    .app .title-container p {
+      color: #d63c6b;
+      font-size: 20px;
+      margin-top: 10px; }
+  .app .show_click_value {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #d63c6b;
+    text-shadow: 1px 1px 5px #fff;
+    font-size: 40px;
+    transform-origin: 100% 70%;
+    transition: .5s;
+    opacity: 0; }
+  .app .show_click_value_open {
+    animation: ani .7s  ease-in-out; }
+  .app .container {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    height: 500px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column; }
+    .app .container .result-wrap {
+      flex: 1;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center; }
+      .app .container .result-wrap .show-result {
+        width: 100%;
+        height: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+        font-size: 40px;
+        color: #d63c6b;
+        overflow: auto;
+        background-color: rgba(255, 255, 255, 0.03); }
+    .app .container .btn-contianer {
+      flex: 4;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr; }
+      .app .container .btn-contianer .operator {
+        color: #d63c6b; }

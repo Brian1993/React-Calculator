@@ -1,0 +1,12 @@
+@import 'mixins.scss';
+
+.btn {
+    @include btn;
+    @include flex-center;
+    &:hover{
+        background: $btn-hover-color ;
+        transform: scale(1.2);
+        color:#5cc8ff;
+    }
+}
+

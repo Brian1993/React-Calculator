@@ -1,0 +1,27 @@
+$background-color:rgba(42, 50, 113, 0.28);
+$btn-hover-color : lighten($background-color , 30%);
+$font-color:#c97874 ;
+$font-color-light:lighten($font-color , 10%);
+@mixin  position-center($top:50% , $left:50%){
+    position: absolute;
+    top:$top;
+    left:$left;
+    transform: translate(-50% , -50%);  
+}
+@mixin  flex-center($dir:row , $justify:center , $align:center) {
+    display: flex;
+    flex-direction: $dir;
+    justify-content:$justify;
+    align-items:$align;
+}
+@mixin  btn {
+    border: 0;
+    background: rgba(42, 50, 113, 0.28);
+    color: #5cc8ff;
+    cursor: pointer;
+    margin: .5em;
+    font-size: 20px;
+    // width: 2em;
+    // height: 2em;
+    transition: all 0.5s;  
+}

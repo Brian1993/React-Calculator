@@ -1,0 +1,16 @@
+.btn {
+  border: 0;
+  background: rgba(42, 50, 113, 0.28);
+  color: #5cc8ff;
+  cursor: pointer;
+  margin: .5em;
+  font-size: 20px;
+  transition: all 0.5s;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+  .btn:hover {
+    background: rgba(108, 118, 200, 0.28);
+    transform: scale(1.2);
+    color: #5cc8ff; }
